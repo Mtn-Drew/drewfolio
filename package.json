@@ -7,5 +7,8 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Drew Carrillo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  }
 }
