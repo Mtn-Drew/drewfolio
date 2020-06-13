@@ -5,11 +5,13 @@ const menu = document.querySelector('.menu')
 const menuNav = document.querySelector('.menu-nav')
 const menuBranding = document.querySelector('.menu-branding')
 const navItems = document.querySelectorAll('.nav-item')
+const homeBtn = document.querySelector('#home-when-home')
 
 //set initial state of menu
 let showMenu = false
 
 menuBtn.addEventListener('click', toggleMenu)
+homeBtn.addEventListener('click', toggleMenu)
 
 function toggleMenu() {
   if (!showMenu){
