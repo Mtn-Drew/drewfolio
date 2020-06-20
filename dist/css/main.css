@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -59,7 +59,8 @@
       background-repeat: no-repeat;
       background-position: center;
       border: solid 3px #f79e02; }
-  .menu .face-down, .menu .face-up {
+  .menu .face-down,
+  .menu .face-up {
     background-image: url("../img/mypics/facePics/face-sprite.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -68,7 +69,7 @@
   .menu .face-down {
     height: 400px;
     background-position: -5px 0px;
-    animation: play 5s steps(2) 1; }
+    animation: play 5s steps(3) 3; }
   .menu .face-up {
     height: 400px;
     background-position: -5px -400px; }
@@ -107,8 +108,10 @@
 @keyframes play {
   0% {
     background-position: -5px 0px; }
-  30% {
-    background-position: -2px -795px; } }
+  50% {
+    background-position: -2px -795px; }
+  100% {
+    background-position: -5px 0px; } }
 
 * {
   box-sizing: border-box; }
