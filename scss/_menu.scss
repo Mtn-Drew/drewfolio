@@ -40,11 +40,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
+
+  
 
   &.show {
     visibility: visible;
+    backdrop-filter: blur(20px);
   }
 
   &-branding,
@@ -132,7 +135,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.current > a {
+    &.current1 > a {
       color: $secondary-color;
     }
   }

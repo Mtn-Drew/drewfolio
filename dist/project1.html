@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Full Screen Slider</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              ABout Me
+            </a>
+          </li>
+          <li class="nav-item current-page">
+            <a href="work.html" class="nav-link">
+              My Work
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              How To Reach Me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="slider">
+      <div class="slide current">
+        <div class="content">
+          <h1>Home Page</h1>
+          <p>
+            The app that started it all.  Here is the contract generator I wrote for Tesla, in all it's Excel VBA glory!
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>Pop Outs</h1>
+          <p>
+            I developed a program to create the contracts and emails we needed by completing simple pop-ups.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>Checklist</h1>
+          <p>
+            Once the information was entered, the data was arranged according to the phone conversation that was coming.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>Emails</h1>
+          <p>
+            Managing several email templates was no longer an issue with the new tool.  Simply click on the cooresponding button and the email would generate with all the relevant verbage and sendto: fields populated.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>Data Tab</h1>
+          <p>
+            The Data Tab page used a traditional spreadsheet to enter contact information for the appropriate parties.  The buttons on the right auto generated case notes.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>VBA</h1>
+          <p>
+            Everything was written in VBA, learned from YouTube and Udemy.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prev"><img src="./img/mypics/art/pointLeft.svg"></button>
+      <button id="next"><img src="./img/mypics/art/pointRight.svg"></button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

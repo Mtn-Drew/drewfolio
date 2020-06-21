@@ -1,9 +1,23 @@
 @import "config";
 @import "menu";
+@import "mood";
 
 * {
   box-sizing: border-box;
 }
+
+// html {
+//   &[data-theme='sunny'] {
+//     $primary-color: rgb(107, 92, 63) !global;
+//     $secondary-color: #f79e02 !global;
+//   }
+//   &[data-theme="rainy"] {
+//     $primary-color: rgba(13, 25, 163, 0.76) !global;
+//     $secondary-color: #15db95 !global;
+//   }
+// }
+
+
 
 body {
   @include background;
@@ -116,15 +130,15 @@ main {
 //work projects
 .projects {
   display: grid;
-  grid-gap: .7rem;
+  grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
-    width:100%;
+    width: 100%;
     border: 1px white solid;
 
-    &:hover{
-      opacity: .5;
+    &:hover {
+      opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
     }
@@ -133,37 +147,36 @@ main {
 
 //contacts page
 .boxes {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
 
-div {
-  font-size: 2rem;
-  border: 1px white solid;
-  padding: 1.5rem 2.5rem;
-  margin-bottom: 3rem;
-  @include easeOut;
+  div {
+    font-size: 2rem;
+    border: 1px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
 
-  &:hover {
-    padding: .5rem 1.5rem;
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-    span {
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
       color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
     }
   }
-}
-
 }
 
 //button styles
 .btn {
   display: block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   &:hover {
     background: $secondary-color;
     color: set-text-color ($secondary-color);
@@ -209,3 +222,123 @@ div {
 //   height: 400px;
 //   background-position: 0px, -401px;
 // }
+
+
+//project one
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Backgorund Images */
+
+/* Full size */
+ 
+.slide:first-child {
+  background: url('/../dist/img/mypics/art/home-page.JPG') no-repeat
+    center top/cover;
+    
+}
+.slide:nth-child(2) {
+  background: url('/../dist/img/mypics/art/lease-pop-out.JPG') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('/../dist/img/mypics/art/checklist.JPG') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('/../dist/img/mypics/art/email-page.JPG') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('/../dist/img/mypics/art/data-tab.JPG') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(6)  {
+  background: url('/../dist/img/mypics/art/vba.JPG') no-repeat
+    center center/cover;
+}
+
+// /home/mtn-drew/code-projects/profile/scss/main.scss
+// /home/mtn-drew/code-projects/profile/dist/img/mypics/art/home-page.JPG
+
+
