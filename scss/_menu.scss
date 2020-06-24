@@ -1,6 +1,6 @@
 .menu-btn {
   position: absolute;
-  z-index: 3;
+  z-index: 13;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -42,6 +42,7 @@
   width: 100%;
   opacity: 0.95;
   visibility: hidden;
+  z-index:11;
 
   
 

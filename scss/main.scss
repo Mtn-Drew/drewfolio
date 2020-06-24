@@ -1,6 +1,7 @@
 @import "config";
 @import "menu";
 @import "mood";
+@import "product-card";
 
 * {
   box-sizing: border-box;
@@ -54,7 +55,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 12;
   width: 100%;
 }
 
