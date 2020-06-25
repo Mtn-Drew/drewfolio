@@ -70,14 +70,26 @@ main {
 
   .icons {
     margin-top: 1rem;
+    border:solid red 1px;
+    //height: 1rem;
+    // a {
+    //   padding: 0.4rem;
+    //   border: solid blue 1px;
 
-    a {
+    //   &:hover {
+    //     color: $secondary-color;
+    //     @include easeOut();
+    //   }
+
+    svg {
       padding: 0.4rem;
+      border: solid blue 1px;
 
       &:hover {
-        color: $secondary-color;
+        fill: $secondary-color;
         @include easeOut();
       }
+
     }
   }
 
