@@ -68,10 +68,11 @@ main {
   //height: 100%;
   min-height: calc(100vh-60px);
 
-  .icons {
-    margin-top: 1rem;
-    border:solid red 1px;
-    //height: 1rem;
+  .icons {  
+    display:flex;
+    margin-top: .5rem;
+    // border:solid red 1px;
+    height: 2rem;
     // a {
     //   padding: 0.4rem;
     //   border: solid blue 1px;
@@ -82,8 +83,9 @@ main {
     //   }
 
     svg {
-      padding: 0.4rem;
-      border: solid blue 1px;
+      margin-right: 2rem;
+      // border: solid blue 1px;
+      height:100%;
 
       &:hover {
         fill: $secondary-color;

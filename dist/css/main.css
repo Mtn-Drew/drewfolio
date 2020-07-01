@@ -124,11 +124,11 @@
 
 .mood {
   position: relative;
+  width: 200px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid blue;
-  height: 800px; }
+  align-items: stretch;
+  justify-content: space-evenly;
+  border: 3px solid blue; }
 
 .mood .icon {
   width: 400px;
@@ -291,13 +291,13 @@
 
 .product-container .product-card:hover .imgBx {
   top: 0%;
-  transform: translateY(-20%); }
+  transform: translateY(-40%); }
 
 .product-container .product-card .imgBx img {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-25deg);
+  transform: translate(-50%, -150%) rotate(-25deg);
   width: 270px;
   border: none; }
 
@@ -348,18 +348,15 @@
   letter-spacing: 2px;
   margin-right: 10px; }
 
-.product-container .product-card .contentBx .size span {
-  width: 26px;
-  height: 26px;
-  text-align: center;
-  line-height: 26px;
-  font-size: 14px;
-  display: inline-block;
-  color: #111;
-  background: #fff;
+.product-container .product-card .contentBx .size span:hover {
+  background: #9bdc28; }
+
+.product-container .product-card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
   margin: 0 5px;
-  transition: 0.5s;
-  border-radius: 4px;
   cursor: pointer; }
 
 .product-container .product-card .contentBx a {
@@ -436,11 +433,12 @@ main {
   padding: 4rem;
   min-height: calc(100vh-60px); }
   main .icons {
-    margin-top: 1rem;
-    border: solid red 1px; }
+    display: flex;
+    margin-top: .5rem;
+    height: 2rem; }
     main .icons svg {
-      padding: 0.4rem;
-      border: solid blue 1px; }
+      margin-right: 2rem;
+      height: 100%; }
       main .icons svg:hover {
         fill: #eb679cf1;
         transition: all 0.5s ease-out; }
