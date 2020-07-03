@@ -276,6 +276,82 @@
   transform: translateY(0px);
   transition-delay: 0.75s; }
 
+.link-icons-body {
+  display: flex; }
+
+.link-icons-container {
+  position: relative;
+  width: 300px;
+  display: flex;
+  align-items: center; }
+
+.link-icons-container .icon {
+  width: 10rem;
+  margin-right: 1rem; }
+
+.link-icons-container .icon path {
+  fill: transparent;
+  stroke: 10;
+  stroke: white;
+  stroke-width: 13; }
+
+.link-icons-container .icon.github path {
+  stroke-dasharray: 2850;
+  stroke-dashoffset: 0; }
+
+.link-icons-container .icon.github:hover path {
+  animation: animate-github .35s linear forwards; }
+
+@keyframes animate-github {
+  0% {
+    stroke-dashoffset: 0; }
+  40% {
+    stroke-dashoffset: 2850; }
+  80% {
+    stroke-dashoffset: 5700;
+    fill: transparent; }
+  100% {
+    stroke-dashoffset: 5700;
+    fill: #eb679cf1; } }
+
+.link-icons-container .icon.linkedIn path {
+  stroke-dasharray: 1960;
+  stroke-dashoffset: 0; }
+
+.link-icons-container .icon.linkedIn:hover path {
+  animation: animate-linkedIn .35s linear forwards; }
+
+@keyframes animate-linkedIn {
+  0% {
+    stroke-dashoffset: 0; }
+  40% {
+    stroke-dashoffset: 1960; }
+  80% {
+    stroke-dashoffset: 3920;
+    fill: transparent; }
+  100% {
+    stroke-dashoffset: 3920;
+    fill: #eb679cf1; } }
+
+.link-icons-container .icon.resume path {
+  stroke-dasharray: 1780;
+  stroke-dashoffset: 0; }
+
+.link-icons-container .icon.resume:hover path {
+  animation: animate-resume .35s linear forwards; }
+
+@keyframes animate-resume {
+  0% {
+    stroke-dashoffset: 0; }
+  40% {
+    stroke-dashoffset: 1780; }
+  80% {
+    stroke-dashoffset: 3560;
+    fill: transparent; }
+  100% {
+    stroke-dashoffset: 3560;
+    fill: #eb679cf1; } }
+
 * {
   box-sizing: border-box; }
 
