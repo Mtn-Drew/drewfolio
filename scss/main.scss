@@ -71,7 +71,7 @@ main {
   .icons {  
     display:flex;
     margin-top: .5rem;
-    // border:solid red 1px;
+     border:solid red 1px;
     height: 2rem;
     // a {
     //   padding: 0.4rem;
@@ -86,6 +86,8 @@ main {
       margin-right: 2rem;
       // border: solid blue 1px;
       height:100%;
+      border:green 1px solid;
+      margin-right: 2.4rem;
 
       &:hover {
         fill: $secondary-color;
