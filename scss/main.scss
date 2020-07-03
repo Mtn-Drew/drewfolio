@@ -37,9 +37,11 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+  
 
   &.lg-heading {
     font-size: 6rem;
+    text-shadow: 3px 3px 5px black;
   }
 
   &.sm-heading {
@@ -47,6 +49,9 @@ h3 {
     padding: 0.2rem 1 rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
+}
+h2 {
+  box-shadow: 2px 2px 5px black;
 }
 
 a {
