@@ -7,6 +7,11 @@ const menuBranding = document.querySelector('.menu-branding')
 const navItems = document.querySelectorAll('.nav-item')
 const homeBtn = document.querySelector('#home-when-home')
 const navLink = document.querySelector('.nav-link')
+const pwGithubLink = document.querySelector('.pw-github-link')
+const gmGithubLink = document.querySelector('.gm-github-link')
+const scGithubLink = document.querySelector('.sc-github-link')
+const scApiGithubLink = document.querySelector('.sc-api-github-link')
+const sgGithubLink = document.querySelector('.sg-github-link')
 
 //set initial state of menu
 let showMenu = false
@@ -113,3 +118,24 @@ if (auto) {
   // Run next slide at interval time
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+
+// My Work card github buttons
+pwGithubLink.addEventListener('click', (e)=>{
+  window.open("https://github.com/Mtn-Drew/drewfolio",'_blank')
+  e.stopPropagation()
+})
+scGithubLink.addEventListener('click', (e)=>{
+  //window.open("https://github.com/Mtn-Drew/stamp-champ",'_blank')
+  window.open("https://github.com/Mtn-Drew/stamp-champ",'_blank')
+  e.stopPropagation()
+})
+scApiGithubLink.addEventListener('click', (e)=>{
+  window.open("https://github.com/Mtn-Drew/stamp-api",'_blank')
+  e.stopPropagation()
+  //window.open("https://github.com/Mtn-Drew/stamp-api",'_blank')
+})
+sgGithubLink.addEventListener('click', (e)=>{
+  window.open("https://github.com/Mtn-Drew/grocery",'_blank')
+  e.stopPropagation()
+})
+

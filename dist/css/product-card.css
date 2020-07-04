@@ -48,7 +48,14 @@
 
 #drew {
   height: 100%;
-  width: 50%; }
+  width: 50%;
+  top: 70%; }
+
+#pw-background {
+  background-color: #2c2b2b;
+  z-index: 12000;
+  height: 100%;
+  width: 100%; }
 
 .github-btn {
   background-image: url(/dist/img/mypics/art/gh-logo.png);
