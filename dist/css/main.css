@@ -136,7 +136,11 @@
   height: 450px;
   background: #2c2b2b;
   border-radius: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 2px 2px 5px black; }
+
+.product-card h2 {
+  box-shadow: none; }
 
 #gm {
   background-image: url(/dist/img/mypics/art/green.png);
@@ -184,7 +188,7 @@
 
 .product-container .product-card .imgBx {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   transition: 0.5s;
   z-index: 10;
@@ -192,7 +196,7 @@
   height: 220px; }
 
 .product-container .product-card:hover .imgBx {
-  top: 0%;
+  top: -20%;
   transform: translateY(-40%); }
 
 .product-container .product-card .imgBx img {
@@ -202,6 +206,14 @@
   transform: translate(-50%, -150%) rotate(-25deg);
   width: 270px;
   border: none; }
+
+.product-container .product-card .imgBx img #stamp-champ {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -150%) rotate(-25deg);
+  width: 270px;
+  border: 5px blue solid;
+  top: 60%; }
 
 .product-container .product-card .contentBx {
   position: absolute;
@@ -213,13 +225,17 @@
   z-index: 9; }
 
 .product-container .product-card:hover .contentBx {
-  height: 210px; }
+  height: 410px; }
 
-.product-container .product-card .contentBx h2 {
+.product-container .product-card .contentBx h1 {
   position: relative;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #fff; }
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 7rem; }
 
 .product-container .product-card .contentBx .size,
 .product-container .product-card .contentBx .color {
@@ -239,7 +255,7 @@
 .product-container .product-card:hover .contentBx .color {
   opacity: 1;
   visibility: visible;
-  transition-delay: 0.6s; }
+  transition-delay: 0.7s; }
 
 .product-container .product-card .contentBx .size h3,
 .product-container .product-card .contentBx .color h3 {
@@ -249,9 +265,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 10px; }
-
-.product-container .product-card .contentBx .size span:hover {
-  background: #9bdc28; }
 
 .product-container .product-card .contentBx .color span {
   width: 20px;
@@ -463,10 +476,6 @@ main {
   .projects img {
     width: 100%;
     border: 1px white solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #eb679cf1;
-      transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
@@ -509,7 +518,8 @@ main {
   padding: 1rem;
   background: rgba(43, 37, 27, 0.76);
   color: #fff;
-  height: 60px; }
+  height: 60px;
+  bottom: 1rem; }
 
 @media screen and (min-width: 1171px) {
   .projects {
