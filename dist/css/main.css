@@ -338,6 +338,9 @@
   transform: translateY(0px);
   transition-delay: 0.75s; }
 
+.text-hidden {
+  display: none; }
+
 .link-icons-body {
   display: flex; }
 
