@@ -142,6 +142,9 @@
 .product-card h2 {
   box-shadow: none; }
 
+.h1div {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 #gm {
   background-image: url(/dist/img/mypics/art/lease-pop-out.JPG);
   background-position: center;
@@ -156,8 +159,14 @@
     height: 100%;
     z-index: 1;
     background: rgba(6, 66, 0, 0.7); }
+  #gm:hover:after {
+    transition: opacity 2.3s;
+    opacity: 0; }
+  #gm h1 {
+    text-shadow: 3px 3px 5px black;
+    padding-bottom: 0; }
   #gm .size img {
-    background-color: rgba(247, 247, 247, 0.7); }
+    background-color: rgba(247, 247, 247, 0.8); }
 
 #sc {
   background-image: url(/dist/img/mypics/art/sc-title.JPG);
@@ -173,8 +182,14 @@
     height: 100%;
     z-index: 1;
     background: rgba(83, 1, 1, 0.7); }
+  #sc:hover:after {
+    transition: opacity 2.3s;
+    opacity: 0; }
+  #sc h1 {
+    text-shadow: 3px 3px 5px black;
+    padding-bottom: 0; }
   #sc .size img {
-    background-color: rgba(247, 247, 247, 0.7); }
+    background-color: rgba(247, 247, 247, 0.8); }
 
 #sg {
   background-image: url(/dist/img/mypics/art/sg-title.JPG);
@@ -190,8 +205,14 @@
     height: 100%;
     z-index: 1;
     background: rgba(3, 116, 136, 0.7); }
+  #sg:hover:after {
+    transition: opacity 2.3s;
+    opacity: 0; }
   #sg .size img {
-    background-color: rgba(247, 247, 247, 0.7); }
+    background-color: rgba(247, 247, 247, 0.9); }
+  #sg h1 {
+    text-shadow: 3px 3px 5px black;
+    padding-bottom: 5px; }
 
 #pw {
   background-image: url(/dist/img/mypics/background/back1.jpg);
@@ -207,8 +228,14 @@
     height: 100%;
     z-index: 1;
     background: rgba(75, 64, 46, 0.7); }
+  #pw:hover:after {
+    transition: opacity 2.3s;
+    opacity: 0; }
+  #pw h1 {
+    text-shadow: 3px 3px 5px black;
+    padding-bottom: 0; }
   #pw .size img {
-    background-color: rgba(247, 247, 247, 0.7); }
+    background-color: rgba(247, 247, 247, 0.8); }
 
 #drew {
   height: 100%;
@@ -230,7 +257,9 @@
   font-size: 20px;
   width: 160px;
   margin: 1rem;
-  height: 50px; }
+  height: 50px;
+  border: solid black 1px;
+  box-shadow: 2px 2px 5px black; }
 
 .product-container .product-card .imgBx {
   position: absolute;
@@ -275,23 +304,32 @@
 
 .product-container .product-card .contentBx h1 {
   position: relative;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 2.5rem;
   line-height: normal;
   color: #fff;
-  margin-bottom: 7rem; }
+  padding: 1rem 0; }
+
+.product-container .product-card .contentBx h3 {
+  text-transform: uppercase; }
 
 .product-container .product-card .contentBx .size,
 .product-container .product-card .contentBx .color {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 20px;
+  padding: 0 20px 8px;
   transition: 0.5s;
   opacity: 0;
   visibility: hidden; }
+
+.product-container .product-card .contentBx .size img {
+  border: solid black 1px;
+  margin-top: 7rem;
+  padding: 10px;
+  box-shadow: 2px 2px 5px black; }
 
 .product-container .product-card:hover .contentBx .size {
   opacity: 1;
@@ -306,19 +344,11 @@
 .product-container .product-card .contentBx .size h3,
 .product-container .product-card .contentBx .color h3 {
   color: #fff;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-right: 10px; }
-
-.product-container .product-card .contentBx .color span {
-  width: 20px;
-  height: 20px;
-  background: #ff0;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer; }
+  margin: 0; }
 
 .product-container .product-card .contentBx a {
   display: inline-block;
@@ -455,7 +485,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1 rem;
+    padding: 0.2rem 1rem;
     background: rgba(81, 69, 50, 0.5); }
 
 h2 {
@@ -474,7 +504,7 @@ header {
   color: #eb679cf1; }
 
 main {
-  padding: 4rem;
+  padding: 1rem 4rem;
   min-height: calc(100vh-60px); }
   main .icons {
     display: flex;
@@ -745,4 +775,12 @@ p {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  opacity: 1; }
+  opacity: 1;
+  transition: .2s linear;
+  animation: odsoky .4s ease-in-out infinite  alternate; }
+
+@keyframes odsoky {
+  0% {
+    transform: translateY(6px); }
+  100% {
+    transform: translateY(1px); } }
