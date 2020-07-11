@@ -537,7 +537,8 @@ p {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eb679cf1 3px solid; }
+    border: #eb679cf1 3px solid;
+    box-shadow: 2px 2px 5px black; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -550,7 +551,8 @@ p {
   .about-info .job {
     background: rgba(91, 77, 56, 0.76);
     padding: 0.5rem;
-    border-bottom: #eb679cf1 5px solid; }
+    border-bottom: #eb679cf1 5px solid;
+    box-shadow: 2px 2px 5px black; }
 
 .projects {
   display: grid;

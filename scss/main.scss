@@ -46,7 +46,7 @@ h3 {
 
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1 rem;
+    padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
@@ -70,7 +70,7 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 1rem 4rem;
   //height: 100%;
   min-height: calc(100vh-60px);
 
@@ -111,6 +111,11 @@ main {
   }
 }
 
+p {
+  font-size: 1.5rem;
+  margin: 1rem 3rem;
+}
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -124,6 +129,7 @@ main {
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    box-shadow: 2px 2px 5px black;
   }
 
   .bio {
@@ -147,6 +153,7 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    box-shadow: 2px 2px 5px black;
   }
 }
 
@@ -366,3 +373,60 @@ main {
 // /home/mtn-drew/code-projects/profile/dist/img/mypics/art/home-page.JPG
 
 
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: .2s linear;
+  animation: odsoky .4s ease-in-out infinite  alternate;
+
+}
+@keyframes odsoky {
+  0%{
+    transform: translateY(6px); 
+  }
+
+  100%{
+    transform: translateY(1px); 
+  }
+}
