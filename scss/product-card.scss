@@ -189,6 +189,12 @@
   height: 50px;
   border: solid black 1px;
   box-shadow: 2px 2px 5px black;
+} 
+
+#gm-github-btn {
+  background-color: rgb(202, 202, 202);
+  filter: blur(8px);
+  -webkit-filter: blur(1px);
 }
 
 // .product-container .product-card:before {
