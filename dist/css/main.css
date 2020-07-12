@@ -495,7 +495,7 @@
     grid-area: job3; }
   .about-info .job {
     background: rgba(91, 77, 56, 0.76);
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: #eb679cf1 5px solid;
     box-shadow: 2px 2px 5px black; }
     .about-info .job p {
@@ -667,9 +667,11 @@ p {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
-      width: 150px;
-      height: 150px; }
+      background: url("../img/portrait_small.png");
+      height: 500px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
