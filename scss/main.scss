@@ -381,7 +381,8 @@ p {
   visibility: visible;
   opacity: 1;
   transition: .2s linear;
-  animation: odsoky .4s ease-in-out infinite  alternate;
+   animation: odsoky .4s ease-in-out infinite  alternate;
+  //animation: odsoky .2 ease-in-out infinite alternate;
 
 }
 @keyframes odsoky {
