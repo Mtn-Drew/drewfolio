@@ -36,7 +36,7 @@ $primary-color: rgba(75, 64, 46, 0.76);
 
 $show-home-image: true;
 // $home-image: url(../img/background.jpg);
-$home-image: url(../img/mypics/background/back1.jpg);
+$home-image: url(../img/mypics/background/back1-sm.jpg);
 $background-opacity: 0.7;
 
 
@@ -76,26 +76,56 @@ $background-opacity: 0.7;
 }
 
 //media query mixins
+// @mixin mediaSm {
+//   @media screen and (max-width: 500px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaMd {
+//   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaLg {
+//   @media screen and (min-width: 769px) and (max-width: 1170px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaXl {
+//   @media screen and (min-width: 1171px) {
+//     @content;
+//   }
+// }
+
+@mixin mediaXs {
+  @media screen and (max-width:470px) {
+    @content;
+  }
+}
+
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 787px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1113px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 1114px) and (max-width: 1419px) {
     @content;
   }
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1171px) {
+  @media screen and (min-width: 1420px) {
     @content;
   }
 }

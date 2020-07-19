@@ -46,7 +46,7 @@ const pwDesc = document.querySelector("#pw-desc");
 
 // function expandJob1() {
 //   aboutInfo.style.gridTemplateAreas = '"job1 bioimage bio" "job1 job2 job3"';
-//   
+//
 // }
 // function expandJob1() {
 //   aboutInfo.style.gridTemplateAreas = '"job1 bio bio" "job1 job2 job3"';
@@ -59,7 +59,7 @@ const pwDesc = document.querySelector("#pw-desc");
 // }
 // function expandJob2() {
 //   aboutInfo.style.gridTemplateAreas = '"bioimage job2 bio" "job1 job2 job3"';
-  
+
 // }
 
 // if (jobThree) {
@@ -68,9 +68,8 @@ const pwDesc = document.querySelector("#pw-desc");
 // }
 // function expandJob3() {
 //   aboutInfo.style.gridTemplateAreas = '"bioimage bio job3" "job1 job2 job3"';
-  
-// }
 
+// }
 
 //set initial state of menu
 let showMenu = false;
@@ -181,24 +180,32 @@ if (auto) {
 }
 
 // My Work card github buttons
-pwGithubLink.addEventListener("click", (e) => {
-  window.open("https://github.com/Mtn-Drew/drewfolio", "_blank");
-  e.stopPropagation();
-});
-scGithubLink.addEventListener("click", (e) => {
-  //window.open("https://github.com/Mtn-Drew/stamp-champ",'_blank')
-  window.open("https://github.com/Mtn-Drew/stamp-champ", "_blank");
-  e.stopPropagation();
-});
-scApiGithubLink.addEventListener("click", (e) => {
-  window.open("https://github.com/Mtn-Drew/stamp-api", "_blank");
-  e.stopPropagation();
-  //window.open("https://github.com/Mtn-Drew/stamp-api",'_blank')
-});
-sgGithubLink.addEventListener("click", (e) => {
-  window.open("https://github.com/Mtn-Drew/grocery", "_blank");
-  e.stopPropagation();
-});
+if (pwGithubLink) {
+  pwGithubLink.addEventListener("click", (e) => {
+    window.open("https://github.com/Mtn-Drew/drewfolio", "_blank");
+    e.stopPropagation();
+  });
+}
+if (scGithubLink) {
+  scGithubLink.addEventListener("click", (e) => {
+    //window.open("https://github.com/Mtn-Drew/stamp-champ",'_blank')
+    window.open("https://github.com/Mtn-Drew/stamp-champ", "_blank");
+    e.stopPropagation();
+  });
+}
+if (scApiGithubLink) {
+  scApiGithubLink.addEventListener("click", (e) => {
+    window.open("https://github.com/Mtn-Drew/stamp-api", "_blank");
+    e.stopPropagation();
+    //window.open("https://github.com/Mtn-Drew/stamp-api",'_blank')
+  });
+}
+if (sgGithubLink) {
+  sgGithubLink.addEventListener("click", (e) => {
+    window.open("https://github.com/Mtn-Drew/grocery", "_blank");
+    e.stopPropagation();
+  });
+}
 
 const addReveal = (el) => {
   el.classList.add("text-revealed");
@@ -213,35 +220,40 @@ function clearDescription() {
 }
 
 // Paragraph descriptions
-gmCard.addEventListener("mouseenter", () => {
-  clearDescription()
-  gmDesc.classList.remove("text-hidden");
-  //addReveal(gmDesc);
-});
+if (gmCard) {
+  gmCard.addEventListener("mouseenter", () => {
+    clearDescription();
+    gmDesc.classList.remove("text-hidden");
+    //addReveal(gmDesc);
+  });
+}
 // gmCard.addEventListener("mouseleave", () => {
 //   gmDesc.classList.add("text-hidden");
 // });
-
-scCard.addEventListener("mouseenter", () => {
-  clearDescription()
-  scDesc.classList.remove("text-hidden");
-});
+if (scCard) {
+  scCard.addEventListener("mouseenter", () => {
+    clearDescription();
+    scDesc.classList.remove("text-hidden");
+  });
+}
 // scCard.addEventListener("mouseleave", () => {
 //   scDesc.classList.add("text-hidden");
 // });
-
-sgCard.addEventListener("mouseenter", () => {
-  clearDescription()
-  sgDesc.classList.remove("text-hidden");
-});
+if (sgCard) {
+  sgCard.addEventListener("mouseenter", () => {
+    clearDescription();
+    sgDesc.classList.remove("text-hidden");
+  });
+}
 // sgCard.addEventListener("mouseleave", () => {
 //   sgDesc.classList.add("text-hidden");
 // });
-
-pwCard.addEventListener("mouseenter", () => {
-  clearDescription()
-  pwDesc.classList.remove("text-hidden");
-});
+if (pwCard) {
+  pwCard.addEventListener("mouseenter", () => {
+    clearDescription();
+    pwDesc.classList.remove("text-hidden");
+  });
+}
 // pwCard.addEventListener("mouseleave", () => {
 //   pwDesc.classList.add("text-hidden");
 // });
