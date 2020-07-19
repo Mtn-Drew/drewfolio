@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mood";
 @import "product-card";
 @import "link-icons";
 @import "about";
@@ -8,19 +7,6 @@
 * {
   box-sizing: border-box;
 }
-
-// html {
-//   &[data-theme='sunny'] {
-//     $primary-color: rgb(107, 92, 63) !global;
-//     $secondary-color: #f79e02 !global;
-//   }
-//   &[data-theme="rainy"] {
-//     $primary-color: rgba(13, 25, 163, 0.76) !global;
-//     $secondary-color: #15db95 !global;
-//   }
-// }
-
-
 
 body {
   @include background;
@@ -30,7 +16,6 @@ body {
   margin: 0;
   font-family: "Segoe UI", "Tahoma", Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  //overflow: hidden;
 }
 
 //Headings
@@ -39,8 +24,6 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
-  
-
   &.lg-heading {
     font-size: 6rem;
     text-shadow: 3px 3px 5px black;
@@ -80,32 +63,22 @@ main {
   //height: 100%;
   min-height: calc(100vh-60px);
 
-  .icons {  
-    display:flex;
-    margin-top: .5rem;
-     border:solid red 1px;
+  .icons {
+    display: flex;
+    margin-top: 0.5rem;
+    border: solid red 1px;
     height: 2rem;
-    // a {
-    //   padding: 0.4rem;
-    //   border: solid blue 1px;
-
-    //   &:hover {
-    //     color: $secondary-color;
-    //     @include easeOut();
-    //   }
 
     svg {
       margin-right: 2rem;
-      // border: solid blue 1px;
-      height:100%;
-      border:green 1px solid;
+      height: 100%;
+      border: green 1px solid;
       margin-right: 2.4rem;
 
       &:hover {
         fill: $secondary-color;
         @include easeOut();
       }
-
     }
   }
 
@@ -122,8 +95,6 @@ p {
   margin: 1rem 3rem;
 }
 
-
-
 //work projects
 .projects {
   display: grid;
@@ -133,12 +104,6 @@ p {
   img {
     width: 100%;
     border: 1px white solid;
-
-    // &:hover {
-    //   opacity: 0.5;
-    //   border-color: $secondary-color;
-    //   @include easeOut;
-    // }
   }
 }
 
@@ -202,25 +167,6 @@ p {
 }
 
 @import "mobile";
-
-// //profile pic
-
-// .face-down, .face-up {
-//   background-image: url('../dist/img/mypics/facePics/face-sprite.png');
-//   background-repeat: no-repeat;
-// }
-
-// .face-down {
-//   height: 800px;
-//   background-position: -5px 0px;
-//   border: 1px solid yellow;
-// }
-
-// .face-up {
-//   height: 400px;
-//   background-position: 0px, -401px;
-// }
-
 
 //project one
 .slider {
@@ -304,53 +250,46 @@ p {
   }
 }
 
-
-
 /* Backgorund Images */
 
 /* Full size */
- 
+
 .slide:first-child {
-  background: url('/../dist/img/mypics/art/home-page.JPG') no-repeat
-    center top/cover;
-    
+  background: url("/../dist/img/mypics/art/home-page.JPG") no-repeat center
+    top/cover;
 }
 .slide:nth-child(2) {
-  background: url('/../dist/img/mypics/art/lease-pop-out.JPG') no-repeat
-    center top/cover;
+  background: url("/../dist/img/mypics/art/lease-pop-out.JPG") no-repeat center
+    top/cover;
 }
 .slide:nth-child(3) {
-  background: url('/../dist/img/mypics/art/checklist.JPG') no-repeat
-    center top/cover;
+  background: url("/../dist/img/mypics/art/checklist.JPG") no-repeat center
+    top/cover;
 }
 .slide:nth-child(4) {
-  background: url('/../dist/img/mypics/art/email-page.JPG') no-repeat
-    center top/cover;
+  background: url("/../dist/img/mypics/art/email-page.JPG") no-repeat center
+    top/cover;
 }
 .slide:nth-child(5) {
-  background: url('/../dist/img/mypics/art/data-tab.JPG') no-repeat
-    center top/cover;
-} 
-.slide:nth-child(6)  {
-  background: url('/../dist/img/mypics/art/vba.JPG') no-repeat
-    center center/cover;
+  background: url("/../dist/img/mypics/art/data-tab.JPG") no-repeat center
+    top/cover;
 }
-
-// /home/mtn-drew/code-projects/profile/scss/main.scss
-// /home/mtn-drew/code-projects/profile/dist/img/mypics/art/home-page.JPG
-
+.slide:nth-child(6) {
+  background: url("/../dist/img/mypics/art/vba.JPG") no-repeat center
+    center/cover;
+}
 
 /* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  }
+}
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #555;
+  background-color: rgb(53, 53, 53);
   color: #fff;
   text-align: center;
   padding: 5px 0;
@@ -362,7 +301,6 @@ p {
   bottom: 125%;
   left: 50%;
   margin-left: -60px;
-
   /* Fade in tooltip */
   opacity: 0;
   transition: opacity 0.3s;
@@ -384,17 +322,16 @@ p {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-  transition: .2s linear;
-   animation: odsoky .4s ease-in-out infinite  alternate;
+  transition: 0.2s linear;
+  animation: odsoky 0.4s ease-in-out infinite alternate;
   //animation: odsoky .2 ease-in-out infinite alternate;
-
 }
 @keyframes odsoky {
-  0%{
-    transform: translateY(6px); 
+  0% {
+    transform: translateY(6px);
   }
 
-  100%{
-    transform: translateY(1px); 
+  100% {
+    transform: translateY(1px);
   }
 }

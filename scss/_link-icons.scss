@@ -1,9 +1,5 @@
 .link-icons-body {
   display: flex;
-  //align-items: center;
-  //justify-content: center;
-  //min-height: 100vh;
-  //border: 3px red solid;
 }
 
 .link-icons-container {
@@ -11,22 +7,17 @@
   width: 300px;
   display: flex;
   align-items: center;
-  //justify-content: space-evenly;
-  //border: 3px solid blue;
 }
 
 .link-icons-container .icon {
-//   width: 4rem;
 width: 10rem;
 margin-right: 1rem;
-  //border: 4px green solid;
 }
 
 .link-icons-container .icon path {
   fill: transparent;
   stroke: 10;
-//   stroke: $secondary-color;
-stroke: white;
+  stroke: white;
   stroke-width: 13
 }
 
@@ -107,29 +98,3 @@ stroke: white;
     fill: $secondary-color;
   }
 }
-
-// .link-icons .icon.moon path {
-//   stroke-dasharray: 1550;
-//   stroke-dashoffset: 0;
-// }
-
-// .link-icons .icon.moon:hover path {
-//   animation: animate-moon .5s linear forwards;
-// }
-
-// @keyframes animate-moon {
-//   0% {
-//     stroke-dashoffset: 0;
-//   }
-//   40% {
-//     stroke-dashoffset: 1550;
-//   }
-//   80% {
-//     stroke-dashoffset: 3100;
-//     fill: transparent;
-//   }
-//   100% {
-//     stroke-dashoffset: 3100;
-//     fill: $secondary-color;
-//   }
-// }

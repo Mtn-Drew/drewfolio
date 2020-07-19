@@ -23,53 +23,6 @@ const sgDesc = document.querySelector("#sg-desc");
 const pwCard = document.querySelector("#pw");
 const pwDesc = document.querySelector("#pw-desc");
 
-// const jobOne = document.querySelector(".job-1");
-// const jobTwo = document.querySelector(".job-2");
-// const jobThree = document.querySelector(".job-3");
-// const aboutInfo = document.querySelector(".about-info");
-// const bioImage = document.querySelector('.bio-image')
-// const aboutHidden = document.querySelector('.about-hidden')
-
-// //about page
-// function defaultGrid() {
-//   aboutInfo.style.gridTemplateAreas = '"bioimage bio bio" "job1 job2 job3"';
-//   bioImage.style.display = 'grid'
-//   aboutHidden.style.display = 'none'
-//   //aboutHidden.style.opacity = '0'
-// }
-
-// if (jobOne) {
-//   jobOne.addEventListener("mouseover", expandJob1);
-//   jobOne.addEventListener("mouseleave", defaultGrid);
-//   aboutHidden.style.display = 'block'
-// }
-
-// function expandJob1() {
-//   aboutInfo.style.gridTemplateAreas = '"job1 bioimage bio" "job1 job2 job3"';
-//
-// }
-// function expandJob1() {
-//   aboutInfo.style.gridTemplateAreas = '"job1 bio bio" "job1 job2 job3"';
-//   bioImage.style.display = 'block'
-// }
-
-// if (jobTwo) {
-//   jobTwo.addEventListener("mouseover", expandJob2);
-//   jobTwo.addEventListener("mouseleave", defaultGrid);
-// }
-// function expandJob2() {
-//   aboutInfo.style.gridTemplateAreas = '"bioimage job2 bio" "job1 job2 job3"';
-
-// }
-
-// if (jobThree) {
-//   jobThree.addEventListener("mouseover", expandJob3);
-//   jobThree.addEventListener("mouseleave", defaultGrid);
-// }
-// function expandJob3() {
-//   aboutInfo.style.gridTemplateAreas = '"bioimage bio job3" "job1 job2 job3"';
-
-// }
 
 //set initial state of menu
 let showMenu = false;
@@ -188,7 +141,6 @@ if (pwGithubLink) {
 }
 if (scGithubLink) {
   scGithubLink.addEventListener("click", (e) => {
-    //window.open("https://github.com/Mtn-Drew/stamp-champ",'_blank')
     window.open("https://github.com/Mtn-Drew/stamp-champ", "_blank");
     e.stopPropagation();
   });
@@ -197,7 +149,6 @@ if (scApiGithubLink) {
   scApiGithubLink.addEventListener("click", (e) => {
     window.open("https://github.com/Mtn-Drew/stamp-api", "_blank");
     e.stopPropagation();
-    //window.open("https://github.com/Mtn-Drew/stamp-api",'_blank')
   });
 }
 if (sgGithubLink) {
@@ -224,36 +175,26 @@ if (gmCard) {
   gmCard.addEventListener("mouseenter", () => {
     clearDescription();
     gmDesc.classList.remove("text-hidden");
-    //addReveal(gmDesc);
   });
+
 }
-// gmCard.addEventListener("mouseleave", () => {
-//   gmDesc.classList.add("text-hidden");
-// });
 if (scCard) {
   scCard.addEventListener("mouseenter", () => {
     clearDescription();
     scDesc.classList.remove("text-hidden");
   });
 }
-// scCard.addEventListener("mouseleave", () => {
-//   scDesc.classList.add("text-hidden");
-// });
+
 if (sgCard) {
   sgCard.addEventListener("mouseenter", () => {
     clearDescription();
     sgDesc.classList.remove("text-hidden");
   });
 }
-// sgCard.addEventListener("mouseleave", () => {
-//   sgDesc.classList.add("text-hidden");
-// });
+
 if (pwCard) {
   pwCard.addEventListener("mouseenter", () => {
     clearDescription();
     pwDesc.classList.remove("text-hidden");
   });
 }
-// pwCard.addEventListener("mouseleave", () => {
-//   pwDesc.classList.add("text-hidden");
-// });

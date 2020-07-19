@@ -1,44 +1,9 @@
-//cool and fresh
-// $primary-color: rgba(5,56,107, 0.9);
-// $secondary-color: #5cdb95;
 
-// bright accent
-// $primary-color: rgba(36, 37, 130, 0.76);
-// $secondary-color: #f64c72;
-
-// $primary-color: rgba(79, 74, 65, 0.76);
- $secondary-color: #eb679cf1;
-
-// bright
-// $primary-color: rgba(227, 226, 223, 0.76);
-//$secondary-color: #ca1363;
-
-// brown with teal
-// $primary-color: rgba(79, 74, 65, 0.76);
-// $secondary-color: #88bdbc;
-
-// fav
 $primary-color: rgba(75, 64, 46, 0.76);
-// $secondary-color: #47e2e0;
-
-// $primary-color: rgba(89, 37, 58, 0.76);
-// $secondary-color: #75c8ff;
-
-// $primary-color: rgba(92, 32, 24, 0.76);
-// $secondary-color: #75c8ff;
-
-// $primary-color: rgba(13, 25, 163, 0.76);
-// $secondary-color: #15db95;
-
-// $primary-color: rgb(107, 92, 63);
-// $secondary-color: #f79e02;
-
-
+$secondary-color: #eb679cf1;
 $show-home-image: true;
-// $home-image: url(../img/background.jpg);
-$home-image: url(../img/mypics/background/back1-sm.jpg);
+$home-image: url(../img/mypics/background/back1.jpg);
 $background-opacity: 0.7;
-
 
 
 @mixin easeOut {
@@ -74,31 +39,6 @@ $background-opacity: 0.7;
     @return #fff;
   }
 }
-
-//media query mixins
-// @mixin mediaSm {
-//   @media screen and (max-width: 500px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaMd {
-//   @media screen and (max-width: 768px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaLg {
-//   @media screen and (min-width: 769px) and (max-width: 1170px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaXl {
-//   @media screen and (min-width: 1171px) {
-//     @content;
-//   }
-// }
 
 @mixin mediaXs {
   @media screen and (max-width:470px) {

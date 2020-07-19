@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +11,9 @@
     />
     <title>Work Page</title>
   </head>
+
   <body>
+
     <header>
       <div class="menu-btn close">
         <div class="btn-line"></div>
@@ -45,6 +48,7 @@
         </ul>
       </nav>
     </header>
+
     <main id="work">
       <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
       <h2 class="sm-heading">
@@ -52,13 +56,13 @@
       </h2>
 
       <div class="projects">
+
         <div class="product-container">
           <a href="gigamacro.html">
             <div class="product-card" id="gm">
               <div class="imgBx">
                 <img src="img/mypics/art/spreadsheet.png" alt="ms excel" />
               </div>
-
               <div class="contentBx">
                 <div class="h1div">
                   <h1>GigaMacro</h1>
@@ -66,14 +70,9 @@
                     <h3>In use at Tesla</h3>
                   </div>
                 </div>
-
                 <div class="size">
                   <img src="img/mypics/art/giga-macro-art.png" alt="vba logo" />
                 </div>
-
-                <!-- <div class="github-btn gm-github-link tooltip" id="gm-github-btn"> 
-                  <span class="tooltiptext">No Demo 😥</span>
-                </div> -->
               </div>
             </div>
           </a>
@@ -96,14 +95,12 @@
                     <h3>In use at Tesla</h3>
                   </div>
                 </div>
-
                 <div class="size">
                   <img
                     src="img/mypics/art/stamp-champ-art.png"
                     alt="react node postgresql"
                   />
                 </div>
-
                 <div class="sc-btn" style="display: flex;">
                   <div class="github-btn sc-github-link tooltip">
                     <span class="tooltiptext">Stamp Champ Frontend</span>
@@ -111,8 +108,6 @@
                   <div class="github-btn sc-api-github-link tooltip">
                     <span class="tooltiptext">Stamp Champ API</span>
                   </div>
-
-                  <!-- <div class="github-btn sc-api-github-link"></div> -->
                 </div>
               </div>
             </div>
@@ -125,7 +120,6 @@
               <div class="imgBx">
                 <img src="img/mypics/art/fruit.png" alt="shopping cart" />
               </div>
-
               <div class="contentBx">
                 <div class="h1div">
                   <h1>Smart Grocery</h1>
@@ -136,7 +130,6 @@
                     alt="react node mongodb"
                   />
                 </div>
-
                 <div class="github-btn sg-github-link tooltip">
                   <span class="tooltiptext">Smart Grocery</span>
                 </div>
@@ -151,9 +144,7 @@
             <div class="product-card" id="pw">
               <div class="imgBx">
                 <img src="img/mypics/facePics/Drew1.png" alt="drew" id="drew" />
-      
               </div>
-
               <div class="contentBx">
                 <div class="h1div">
                   <h1>Portfolio Website</h1>
@@ -164,7 +155,6 @@
                     alt="html css js scss"
                   />
                 </div>
-
                 <div
                   class="github-btn pw-github-link tooltip"
                   href="https://github.com/Mtn-Drew/drewfolio"
@@ -176,53 +166,56 @@
             </div>
           </a>
         </div>
+
       </div>
+    
+
+      <div class="project-descriptions text-hidden" id="gm-desc">
+        <a href="gigamacro.html">
+        <p >
+          The program that started it all. Written for the Tesla Property and Title
+          team, this is the code that put me on the path to becoming a developer. Is
+          it DRY? Well written? No. Easy to understand? Succinct? Um, no again. Then
+          why is it listed here? 
+        </p>
+        <p>I taught myself to code to write this program.
+        Frustrated at the tedious parts of a job I otherwise loved, I decided to
+        make it happen. I took to Youtube and Udemy and learned Visual Basic for
+        Applications. I chose VBA because we already made heavy use of Excel on
+        our team, and writing the code in VBA would require special permissions or
+        even require installation to use. I simply bundled it into a workbook (or
+        two) and passed the workbooks out to the team.
+        </p>
+        <p>Click for more...</p></a>
+      </div>
+
+      <div class="project-descriptions text-hidden" id="sc-desc">
+        <a href="stamp-champ.html">
+        <p>Stamp Champ was also written for Tesla, though it was written completely on my own time and is fully owned by me.</p>  
+        <p> Stamp Champ is a full stack app written React, Node, Express, and ProstgreSQL.</p>
+        <p> Click for more...</p>
+        </p></a>
+      </div>
+
+      <div class="project-descriptions text-hidden" id="sg-desc">
+        <a href="smart-grocery.html">
+        <p>Smart Grocery is a full stack web app.  It is written in React, Node, Express and MongoDB.  It sorts your grocery list by store and aisle.  Your entries can contain personal descriptions and your submissions are stored.
+        </p><p>You can search for previously purchased items in real time.</p>
+        <p>Click for more...
+        </p></a>
+      </div>
+
+      <div class="project-descriptions text-hidden" id="pw-desc">
+        <a href="portfolio-website.html">
+          <p >My Portfolio Website!</p>
+          <p>Built in the traditional HTML, CSS and JavaScript, I thought I should try my hand at Sass.
+          </p><p>   I also took the opportunity to try out some css and svg animations.
+          <p>Click for more...
+          </p>
+        </a>
+      </div>
+
     </main>
-    <div class="project-descriptions text-hidden" id="gm-desc">
-      <a href="gigamacro.html">
-    <p >
-      The program that started it all. Written for the Tesla Property and Title
-      team, this is the code that put me on the path to becoming a developer. Is
-      it DRY? Well written? No. Easy to understand? Succinct? Um, no again. Then
-      why is it listed here? 
-    </p>
-      <p>I taught myself to code to write this program.
-      Frustrated at the tedious parts of a job I otherwise loved, I decided to
-      make it happen. I took to Youtube and Udemy and learned Visual Basic for
-      Applications. I chose VBA because we already made heavy use of Excel on
-      our team, and writing the code in VBA would require special permissions or
-      even require installation to use. I simply bundled it into a workbook (or
-      two) and passed the workbooks out to the team.
-    </p>
-    <p>Click for more...</p></a>
-  </div>
-  <div class="project-descriptions text-hidden" id="sc-desc">
-    <a href="stamp-champ.html">
-    <p>Stamp Champ was also written for Tesla, though it was written completely on my own time and is fully owned by me.</p>  
-     <p> Stamp Champ is a full stack app written React, Node, Express, and ProstgreSQL.</p>
-      
-     <p> Click for more...</p>
-    </p></a></div>
-
-    <div class="project-descriptions text-hidden" id="sg-desc">
-      <a href="smart-grocery.html">
-
-    <p >
-      Smart Grocery is a full stack web app.  It is written in React, Node, Express and MongoDB.  It sorts your grocery list by store and aisle.  Your entries can contain personal descriptions and your submissions are stored.
-    </p><p>You can search for previously purchased items in real time.</p>
-
-<p>Click for more...
-    </p></a>
-  </div>
-
-<div class="project-descriptions text-hidden" id="pw-desc">
-  <a href="portfolio-website.html">
-    <p >My Portfolio Website!</p>
-      <p>Built in the traditional HTML, CSS and JavaScript, I thought I should try my hand at Sass.
-      </p><p>   I also took the opportunity to try out some css and svg animations.
-<p>Click for more...
-    </p></a>
-  </div>
     <script src="js/main.js"></script>
   </body>
 </html>

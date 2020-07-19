@@ -48,28 +48,13 @@
   visibility: hidden;
   z-index:11;
 
-  
-
   &.show {
     visibility: visible;
     backdrop-filter: blur(20px);
   }
 
-  // &-branding,
-  // &-nav {
-  //   display: flex;
-  //   flex-flow: column wrap;
-  //   align-items: center;
-  //   justify-content: center;
-  //   float: left;
-  //   width: 50%;
-  //   height: 100vh;
-  //   overflow: hidden;
-  // }
-
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-  &-branding {
-  
+  &-branding,
+  &-nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -78,22 +63,7 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
-  
-}
-
-
-&-nav {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  //float: left;
-  width: 50%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  }
 
   &-nav {
     margin: 0;
@@ -121,49 +91,19 @@
     }
 
     .portrait {
-      // width: 250px;
-      // height: 250px;
       width: 300px;
       height: 450px;
-
-      // background: url('../img/portrait.jpg');
       background: url("../img/mypics/facePics/Drew2.png");
       background-repeat: no-repeat;
-      // background-attachment: fixed;
       background-position: center;
-      // border-radius: 50%;
       border: solid 3px $secondary-color;
     }
-  }
-
-  //profile pic
-
-  .face-down,
-  .face-up {
-    background-image: url("../img/mypics/facePics/face-sprite.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: solid 3px $secondary-color;
-    width: 300px;
-  }
-
-  .face-down {
-    // position: absolute;
-    height: 400px;
-    background-position: -5px 0px;
-    animation: play 5s steps(3) 3;
-  }
-
-  .face-up {
-    height: 400px;
-    background-position: -5px -400px;
   }
 
   .nav-item {
     transform: translate3d(400px, 0, 0);
     @include easeOut;
     
-
     &.show {
       //slide in from right
       transform: translate3d(0, 0, 0);

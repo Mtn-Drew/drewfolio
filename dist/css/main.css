@@ -154,7 +154,7 @@
   background-color: rgba(0, 0, 0, 0.7); }
 
 #gm {
-  background-image: url(/img/mypics/art/lease-pop-out.JPG);
+  background-image: url(/dist/img/mypics/art/lease-pop-out.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -223,7 +223,7 @@
     padding-bottom: 5px; }
 
 #pw {
-  background-image: url(/dist/img/mypics/background/back1-sm.jpg);
+  background-image: url(/dist/img/mypics/background/back1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -522,7 +522,7 @@ body {
   font-family: "Segoe UI", "Tahoma", Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/mypics/background/back1-sm.jpg);
+    background: url(../img/mypics/background/back1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -575,7 +575,7 @@ main {
   min-height: calc(100vh-60px); }
   main .icons {
     display: flex;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     border: solid red 1px;
     height: 2rem; }
     main .icons svg {
@@ -805,7 +805,7 @@ p {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #555;
+  background-color: #353535;
   color: #fff;
   text-align: center;
   padding: 5px 0;
@@ -835,8 +835,8 @@ p {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-  transition: .2s linear;
-  animation: odsoky .4s ease-in-out infinite  alternate; }
+  transition: 0.2s linear;
+  animation: odsoky 0.4s ease-in-out infinite alternate; }
 
 @keyframes odsoky {
   0% {
