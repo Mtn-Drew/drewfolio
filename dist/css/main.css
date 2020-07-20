@@ -33,20 +33,12 @@
   .menu.show {
     visibility: visible;
     backdrop-filter: blur(20px); }
-  .menu-branding {
+  .menu-branding, .menu-nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     float: left;
-    width: 50%;
-    height: 100vh;
-    overflow: hidden; }
-  .menu-nav {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
     width: 50%;
     height: 100vh;
     overflow: hidden; }
@@ -72,20 +64,6 @@
       background-repeat: no-repeat;
       background-position: center;
       border: solid 3px #eb679cf1; }
-  .menu .face-down,
-  .menu .face-up {
-    background-image: url("../img/mypics/facePics/face-sprite.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: solid 3px #eb679cf1;
-    width: 300px; }
-  .menu .face-down {
-    height: 400px;
-    background-position: -5px 0px;
-    animation: play 5s steps(3) 3; }
-  .menu .face-up {
-    height: 400px;
-    background-position: -5px -400px; }
   .menu .nav-item {
     transform: translate3d(400px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -554,6 +532,10 @@ h3 {
 
 h2 {
   box-shadow: 2px 2px 5px black; }
+
+h5 {
+  font-size: 1.5rem;
+  margin-top: 3rem; }
 
 h6 {
   font-size: 1rem; }
