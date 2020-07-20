@@ -168,6 +168,7 @@
   height: 50px;
   border: solid black 1px;
   box-shadow: 2px 2px 5px black;
+  cursor: pointer;
 }
 
 #gm-github-btn {
@@ -274,20 +275,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0;
-}
-
-.product-container .product-card .contentBx a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 4px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.5s;
 }
 
 .product-container .product-card:hover .contentBx a {
